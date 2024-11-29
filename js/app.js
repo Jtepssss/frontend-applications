@@ -7,7 +7,7 @@ import {
 } from "./api";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const essenceList = document.getElementById("essence-list");
+  const essenceList = document.getElementById("essence-List");
 
   const essences = await getEssence();
   essenceList.innerHTML = essences.map((essence) => `
@@ -36,7 +36,7 @@ window.viewEssence = async (CodigoDelProducto) => {
       button>
      </div>   
   `;
-  document.getElementById("essence-list").innerHTML = essenceDetails;
+  document.getElementById("essence-List").innerHTML = essenceDetails;
 };
 
 //Crear la vista para editar la informacion
